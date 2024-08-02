@@ -1,0 +1,12 @@
+apiVersion: rbac.authorixation.k8s.io/vi
+kind: Role
+metadata: 
+  namespace: expence
+  name: expence-pod-reader
+
+rules: 
+- apiGroups: [""]
+  resource: ["pods"]
+  verbs: ["get","watch","list"]
+
+
